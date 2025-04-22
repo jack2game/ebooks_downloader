@@ -1,3 +1,4 @@
 cookie.json
 .env
 output
+__pycache__
