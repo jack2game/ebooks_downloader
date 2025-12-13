@@ -37,7 +37,7 @@ your_project/
 │   ├── download_images.py # 負責圖片下載
 │   ├── merge_pdf.py       # 負責合併 PDF
 │   └── utils.py           # 共用工具函式
-├── cooke.json             # Cookie 檔案
+├── cookie.json             # Cookie 檔案
 ├── .env                   # 圖片網址模板
 ├── requirements.txt       # 依賴套件
 └── output/
@@ -65,7 +65,7 @@ your_project/
 ### 準備檔案
 
 - **Cookie 檔案**：
-  將登入後的 Cookie 匯出為 cooke.json，放置於專案根目錄。
+  將登入後的 Cookie 匯出為 cookie.json，放置於專案根目錄。
   Cookie 匯出方式可參考瀏覽器開發者工具。
 
 - **圖片網址模板**：在 .env 檔案中填入圖片網址模板，格式如下：
