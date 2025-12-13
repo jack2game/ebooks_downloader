@@ -4,7 +4,7 @@ import json
 
 def format_page_number(page_num):
     """將頁數轉為三位數字串（如 12 -> 012）"""
-    return f"{page_num:03d}"
+    return f"{page_num:d}"
 
 
 def ensure_dir(path):

@@ -1,6 +1,6 @@
 import requests
 import os
-from utils import format_page_number, ensure_dir, load_env, load_cookies
+from .utils import format_page_number, ensure_dir, load_env, load_cookies
 
 
 def download_chapter_images(chapter_name, start_page, next_chapter_start, output_dir='output'):
@@ -26,6 +26,7 @@ def download_chapter_images(chapter_name, start_page, next_chapter_start, output
     for page in range(first_img_page, last_img_page):
         page_str = format_page_number(page)
         url = url_template.replace('{page}', page_str)
+        # print(url)
         img_name = f"{format_page_number(img_idx)}.jpg"
         img_path = os.path.join(chapter_dir, img_name)
         try:
